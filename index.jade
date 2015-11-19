@@ -1,0 +1,60 @@
+doctype html
+html(lang="en")
+    head
+        title Videoserver
+        link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css")
+        link(rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons')
+        link(rel="stylesheet" href="/main.css")
+    body
+        div.navbar-fixed
+            nav
+                .nav-wrapper.blue-grey.darken-1.z-depth-5
+                    a.brand-logo(href='#!' style="margin-left: 5px") Videoserver
+                    a.button-collapse(href='#', data-activates='mobile-demo')
+                        i.material-icons menu
+                    ul.right.hide-on-med-and-down
+                        li
+                            a(href='#video') Video
+                        li
+                            a(href='#about') About
+                        li
+                            a(href='#who') Who
+                    ul#mobile-demo.side-nav
+                        li
+                            a(href='#video') Video
+                        li
+                            a(href='#about') About
+                        li
+                            a(href='#who') Who
+
+
+        div.container
+            div.row
+                div.video.z-depth-4.col.s12#video
+                    img(src="")
+
+        .row#about
+            .col.s12
+                .card.blue-grey.darken-1
+                    .card-content.white-text.z-depth-4
+                        span.card-title About
+                        p.orange-text.text-accent-2
+                            | Videoserver es un proyecto de la materia Intoducción a la computación de la Universidad Austral.
+                            br
+                            | Consiste en conectar una camara a una raspi, que detecta la foto y levanta un servidor ofreciendo
+
+        .row#who
+            .col.s12
+                .card.blue-grey.darken-1
+                    .card-content.white-text.z-depth-4
+                        span.card-title Who
+                        p.orange-text.text-accent-2
+                            | Alumnos: Federico Ruis y Santiago Fuentes
+                            br
+                            | Profesor: Alejandro Silvestri
+
+
+
+        script(src="/external/jquery/dist/jquery.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js")
+        script $( document ).ready(function(){$(".button-collapse").sideNav()})
